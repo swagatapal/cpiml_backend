@@ -21,7 +21,12 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: [
-    'https://cpiml-frontend.onrender.com' // production domain
+
+    'https://cpiml-frontend.onrender.com', // production domain
+    'https://cpiml-frontend.onrender.com/auth',
+    'https://cpiml-frontend.onrender.com/news',
+    'https://cpiml-frontend.onrender.com/upload',
+    'https://cpiml-frontend.onrender.com/location'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
