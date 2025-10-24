@@ -107,7 +107,7 @@ router.get('/', async (req, res) => {
 // @route   GET api/news/my-news
 // @desc    Get all news items created by the authenticated admin user
 // @access  Private (Admin only)
-router.get('/my-news', auth, authorize(['admin']), async (req, res) => {
+router.get('/my-news', auth, async (req, res) => {
   try {
     const news = await News.find({ author: req.user.id }).populate('author', ['name', 'email']).sort({ date: -1 });
     res.json(news);

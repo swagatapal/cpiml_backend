@@ -23,10 +23,10 @@ app.use(cors({
   origin: [
 
     'https://cpiml-frontend.onrender.com', // production domain
-    'https://cpiml-frontend.onrender.com/api/auth',
-    'https://cpiml-frontend.onrender.com/api/news',
-    'https://cpiml-frontend.onrender.com/api/upload',
-    'https://cpiml-frontend.onrender.com/api/location'
+    // 'https://cpiml-frontend.onrender.com/api/auth',
+    // 'https://cpiml-frontend.onrender.com/api/news',
+    // 'https://cpiml-frontend.onrender.com/api/upload',
+    // 'https://cpiml-frontend.onrender.com/api/location'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
